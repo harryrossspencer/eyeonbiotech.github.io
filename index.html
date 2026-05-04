@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eye On Biotech — Dr Harry Spencer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="banner">
+        <span class="banner-title">Dr Harry Spencer — Eye On Biotech</span>
+        <a href="index.html">All Articles</a>
+    </div>
+
+    <header>
+        <h1>Eye On Biotech</h1>
+        <p class="site-tagline">Clinical probability and trial design analysis in ophthalmology therapeutics</p>
+    </header>
+
+    <main>
+
+        <!-- ============================================================
+             ABOUT
+        ============================================================ -->
+        <section class="about">
+            <h2>About This Site</h2>
+
+            <p>
+                I started this blog as a space to publish my research on ophthalmology therapeutics.
+                My articles aim to combine a clinical critical appraisal of trial data with commentary
+                on the medical landscape including clinician adoption and probability of success.
+                <br>
+                <br>
+                My goal is to highlight the key data amongst the noise and to produce score and
+                probabilities of success for each company that allow direct comparison.
+                Over time, I hope to calibrate my thinking as new data is released to see
+                what went right and what went wrong.
+            </p>
+        </section>
+
+
+        <!-- ============================================================
+             METHODOLOGY — collapsible
+        ============================================================ -->
+        <section class="methodology">
+            <h2>Methodology</h2>
+
+            <button class="methodology-toggle" id="methodologyToggle2" aria-expanded="false">
+                About Me
+                <span class="methodology-toggle__icon">+</span>
+            </button>
+
+            <div class="methodology-body" id="methodologyBody2">
+                <p>
+                    Hello, my name is Harry Spencer. I studied medicine at university and have
+                    always been fascinated by the intersection between academic research and the
+                    development of new therapeutics. After completing my foundation training,
+                    I took some time out of medicine to work at a biotech-focused VC fund and
+                    began studying for the CFA. I then moved into an operational consulting role,
+                    where I first started coding while helping to build a simple regression model
+                    to estimate pricing elasticity. I later returned to medicine, initially
+                    training in histopathology before moving into ophthalmology. After coming
+                    back to clinical work, I found myself looking for a personal project that
+                    could combine my interest in financial analysis with clinical appraisal of
+                    new therapeutics. Starting a blog where I could share my research felt like
+                    a natural fit. It gives me a place to publish my work, improve through feedback,
+                    and experiment with building and maintaining my own website. I enjoy learning
+                    about investing and biotech, and I hope this blog can serve as a space to share
+                    my thinking and continue improving over time.
+                </p>
+            </div>
+
+            <button class="methodology-toggle" id="methodologyToggle" aria-expanded="false">
+                How I structure my analyses
+                <span class="methodology-toggle__icon">+</span>
+            </button>
+
+            <div class="methodology-body" id="methodologyBody">
+
+                <p>
+                    Each analysis follows a fixed structure designed to mirror the workflow of a clinical-stage
+                    investment analyst. The goal is to separate biological plausibility, trial quality, and
+                    commercial viability into distinct assessments before combining them into a final probability
+                    estimate.
+                </p>
+
+                <h4>1. Disease Biology</h4>
+                <p>
+                    A summary of the target disease, its pathophysiology, and the current standard of care.
+                    This section establishes the clinical context and frames the unmet need the therapy is
+                    attempting to address.
+                </p>
+
+                <h4>2. Mechanism of Action</h4>
+                <p>
+                    An evaluation of the biological target, the pathway rationale, and whether the target is
+                    validated. Mechanism-specific risks are identified here — not just class effects, but risks
+                    specific to the delivery method, molecule type, or therapeutic approach.
+                </p>
+
+                <h4>3. Trial Design Critique</h4>
+                <p>
+                    A structured review of the trial design, including endpoint selection, comparator
+                    appropriateness, power assumptions, and sources of potential bias. Regulatory design
+                    decisions (superiority vs non-inferiority, primary vs secondary endpoints) are assessed
+                    in the context of both approval likelihood and commercial meaningfulness.
+                </p>
+
+                <h4>4. Endpoint Analysis & Real-World Application</h4>
+                <p>
+                    Available data are reviewed and contextualised against the specific endpoints used. Where
+                    possible, effect sizes are compared against prior trials and benchmarked against the
+                    threshold likely to drive clinical adoption, not just regulatory approval.
+                </p>
+
+                <h4>5. Safety Profile</h4>
+                <p>
+                    Known adverse events are assessed for clinical significance and adoption risk. Particular
+                    attention is given to events that could limit real-world use even if a therapy achieves
+                    regulatory approval.
+                </p>
+
+                <h4>6. Competitive Landscape & Adoption Analysis</h4>
+                <p>
+                    The therapy is placed in its commercial context: pipeline competitors, prescribing inertia,
+                    payer dynamics, and the magnitude of improvement required to shift clinical practice. These
+                    sections are intentionally separated from the clinical analysis because commercial success
+                    and regulatory success are distinct outcomes.
+                </p>
+
+                <h4>Probability Framework</h4>
+                <p>
+                    A blended probability estimate is produced by multiplying four conditional probabilities:
+                    mechanism plausibility, trial success, regulatory approval given a positive trial, and
+                    meaningful commercial adoption. Each component is assigned independently before being
+                    combined. The final figure is not a price target or investment recommendation — it is a
+                    structured estimate of the probability of clinical and commercial success, intended to make
+                    my reasoning explicit and falsifiable.
+                </p>
+
+                <h4>Clinical Materiality Score</h4>
+                <p>
+                    A 1–10 composite score across six dimensions: biological plausibility, endpoint strength,
+                    effect size relevance, safety profile, adoption friction, and commercial durability. This
+                    score reflects how meaningful the therapy would be to patients and clinicians if approved —
+                    independent of its probability of reaching that point.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             COVERAGE INDEX
+        ============================================================ -->
+        <section class="coverage">
+            <h2>Research Coverage</h2>
+
+            <table class="coverage-table">
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Company</th>
+                        <th>Ticker</th>
+                        <th>Condition</th>
+                        <th>Trial</th>
+                        <th>Prob of Success</th>
+                        <th>Materiality Score</th>
+                        <th>Last Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="coverage-row" onclick="window.location='articles/oculartherapeutixarticle.html'">
+                        <td class="coverage-asset">AXPAXLI</td>
+                        <td>Ocular Therapeutix</td>
+                        <td class="coverage-ticker">OCUL</td>
+                        <td>Wet AMD</td>
+                        <td class="coverage-trial">SOL-R <span class="phase-badge phase-badge--3">Phase 3</span></td>
+                        <td class="coverage-poa">30%</td>
+                        <td class="coverage-cms">5.8</td>
+                        <td class="coverage-date">May 2026</td>
+                    </tr>
+                    <!-- Add new rows here for each new article -->
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-disclosure">
+            <strong>Disclosure:</strong> The author holds no positions in any securities mentioned.
+            All content is for informational purposes only and does not constitute financial,
+            investment, or medical advice. Analysis reflects the author's personal views and
+            independent research. Always conduct your own due diligence.
+        </div>
+        <div class="footer-copy">
+            © 2026 Eye On Biotech — Dr Harry Spencer
+        </div>
+    </footer>
+
+    <script>
+        // Methodology collapsible toggle
+        (function () {
+            const toggle = document.getElementById('methodologyToggle');
+            const body   = document.getElementById('methodologyBody');
+
+            toggle.addEventListener('click', function () {
+                const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', !isOpen);
+                toggle.querySelector('.methodology-toggle__icon').textContent = isOpen ? '+' : '−';
+                body.classList.toggle('methodology-body--open', !isOpen);
+            });
+        })();
+
+        (function () {
+            const toggle = document.getElementById('methodologyToggle2');
+            const body   = document.getElementById('methodologyBody2');
+
+            toggle.addEventListener('click', function () {
+                const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', !isOpen);
+                toggle.querySelector('.methodology-toggle__icon').textContent = isOpen ? '+' : '−';
+                body.classList.toggle('methodology-body--open', !isOpen);
+            });
+        })();
+    </script>
+
+</body>
+</html>
