@@ -14,25 +14,39 @@
         <a href="index.html">All Articles</a>
     </div>
 
-    <header>
-        <h1>Eye On Biotech</h1>
-        <p class="site-tagline">Clinical probability and trial design analysis in ophthalmology therapeutics</p>
+    <header class="site-header">
+        <div class="site-header__left">
+            <span class="site-header__eyebrow">Independent Research</span>
+            <h1 class="site-header__title">Eye On Biotech</h1>
+            <div class="site-header__rule"></div>
+            <p class="site-header__tagline">Clinical probability and trial design analysis in ophthalmology therapeutics</p>
+        </div>
+        <div class="site-header__stats">
+            <div class="site-header__stat">
+                <span class="site-header__stat-value">1</span>
+                <span class="site-header__stat-label">Analyses Published</span>
+            </div>
+            <div class="site-header__stat-divider"></div>
+            <div class="site-header__stat">
+                <span class="site-header__stat-value">1</span>
+                <span class="site-header__stat-label">Companies Covered</span>
+            </div>
+        </div>
     </header>
 
-    <main>
+    <main class="homepage-main">
 
         <!-- ============================================================
              ABOUT
         ============================================================ -->
         <section class="about">
             <h2>About This Site</h2>
-
             <p>
                 I started this blog as a space to publish my research on ophthalmology therapeutics.
                 My articles aim to combine a clinical critical appraisal of trial data with commentary
                 on the medical landscape including clinician adoption and probability of success.
-                <br>
-                <br>
+            </p>
+            <p>
                 My goal is to highlight the key data amongst the noise and to produce score and
                 probabilities of success for each company that allow direct comparison.
                 Over time, I hope to calibrate my thinking as new data is released to see
@@ -42,10 +56,46 @@
 
 
         <!-- ============================================================
+             COVERAGE INDEX
+        ============================================================ -->
+        <section class="coverage">
+            <h2>Research Coverage</h2>
+
+            <table class="coverage-table">
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Company</th>
+                        <th>Ticker</th>
+                        <th>Condition</th>
+                        <th>Trial</th>
+                        <th>Prob of Success</th>
+                        <th>Materiality Score</th>
+                        <th>Last Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="coverage-row" onclick="window.location='articles/oculartherapeutixarticle.html'">
+                        <td class="coverage-asset">AXPAXLI</td>
+                        <td>Ocular Therapeutix</td>
+                        <td class="coverage-ticker">OCUL</td>
+                        <td>Wet AMD</td>
+                        <td class="coverage-trial">SOL-R <span class="phase-badge phase-badge--3">Phase 3</span></td>
+                        <td><span class="score-badge score-badge--red">30%</span></td>
+                        <td><span class="score-badge score-badge--yellow">5.8</span></td>
+                        <td class="coverage-date">May 2026</td>
+                    </tr>
+                    <!-- Add new rows here for each new article -->
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- ============================================================
              METHODOLOGY — collapsible
         ============================================================ -->
         <section class="methodology">
-            <h2>Methodology</h2>
+            <h2>Information</h2>
 
             <button class="methodology-toggle" id="methodologyToggle2" aria-expanded="false">
                 About Me
@@ -56,17 +106,18 @@
                 <p>
                     Hello, my name is Harry Spencer. I studied medicine at university and have
                     always been fascinated by the intersection between academic research and the
-                    development of new therapeutics. 
-                    <br><br>
+                    development of new therapeutics.
+                </p>
+                <p>
                     After completing my foundation training,
                     I took some time out of medicine to work at a biotech-focused VC fund and
                     began studying for the CFA. I then moved into an operational consulting role,
                     where I first started coding while helping to build a simple regression model
                     to estimate pricing elasticity. I later returned to medicine, initially
-                    training in histopathology before moving into ophthalmology. 
-                    <br><br>
-                    After coming
-                    back to clinical work, I found myself looking for a personal project that
+                    training in histopathology before moving into ophthalmology.
+                </p>
+                <p>
+                    After coming back to clinical work, I found myself looking for a personal project that
                     could combine my interest in financial analysis with clinical appraisal of
                     new therapeutics. Starting a blog where I could share my research felt like
                     a natural fit. It gives me a place to publish my work, improve through feedback,
@@ -82,7 +133,6 @@
             </button>
 
             <div class="methodology-body" id="methodologyBody">
-
                 <p>
                     Each analysis follows a fixed structure designed to mirror the workflow of a clinical-stage
                     investment analyst. The goal is to separate biological plausibility, trial quality, and
@@ -151,44 +201,7 @@
                     score reflects how meaningful the therapy would be to patients and clinicians if approved —
                     independent of its probability of reaching that point.
                 </p>
-
             </div>
-        </section>
-
-
-        <!-- ============================================================
-             COVERAGE INDEX
-        ============================================================ -->
-        <section class="coverage">
-            <h2>Research Coverage</h2>
-
-            <table class="coverage-table">
-                <thead>
-                    <tr>
-                        <th>Asset</th>
-                        <th>Company</th>
-                        <th>Ticker</th>
-                        <th>Condition</th>
-                        <th>Trial</th>
-                        <th>Prob of Success</th>
-                        <th>Materiality Score</th>
-                        <th>Last Edit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="coverage-row" onclick="window.location='articles/oculartherapeutixarticle.html'">
-                        <td class="coverage-asset">AXPAXLI</td>
-                        <td>Ocular Therapeutix</td>
-                        <td class="coverage-ticker">OCUL</td>
-                        <td>Wet AMD</td>
-                        <td class="coverage-trial">SOL-R <span class="phase-badge phase-badge--3">Phase 3</span></td>
-                        <td class="coverage-poa">30%</td>
-                        <td class="coverage-cms">5.8</td>
-                        <td class="coverage-date">May 2026</td>
-                    </tr>
-                    <!-- Add new rows here for each new article -->
-                </tbody>
-            </table>
         </section>
 
     </main>
@@ -206,11 +219,9 @@
     </footer>
 
     <script>
-        // Methodology collapsible toggle
         (function () {
             const toggle = document.getElementById('methodologyToggle');
             const body   = document.getElementById('methodologyBody');
-
             toggle.addEventListener('click', function () {
                 const isOpen = toggle.getAttribute('aria-expanded') === 'true';
                 toggle.setAttribute('aria-expanded', !isOpen);
@@ -222,7 +233,6 @@
         (function () {
             const toggle = document.getElementById('methodologyToggle2');
             const body   = document.getElementById('methodologyBody2');
-
             toggle.addEventListener('click', function () {
                 const isOpen = toggle.getAttribute('aria-expanded') === 'true';
                 toggle.setAttribute('aria-expanded', !isOpen);
